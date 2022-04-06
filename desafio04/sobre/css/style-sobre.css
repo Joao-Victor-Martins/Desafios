@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(49, 49, 49);
+    margin: 0;
+    background-image: url(/imagens/2109.w026.n002.907B.p0.907.jpg);
+}
+
+header {
+    max-width: 1000px;
+    height: 50px;
+    background-color: #daa520;
+    margin: auto;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.514);
+    color: black;
+}
+
+header img {
+    max-width: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.568);
+    border-radius: 50%;
+    transform: translate(50%, -15%);
+    border-color: #9c7510;
+    border-style: double;
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+    float: right;
+    word-spacing: 50px;
+    transform: translate(-30%, 10%);
+}
+
+li {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 25px;
+    word-spacing: 50px;
+    color: black;
+}
+
+li:hover {
+    padding: 7px 10px;
+    font-size: 25px;
+    color: black;
+    background-color: #9c7510;
+    border-radius: 10px;
+    margin-left: auto;
+    transition-duration: 0.5s;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 120px;
+    }
+    header img {
+        position: relative;
+        left: 40%;
+        transform: none;
+    }
+    ul {
+        position: absolute;
+        right: -55px;
+        max-width: 100%;
+    
+    }
+}
+
+
+/* ----------- !Conteúdo Principal! ----------- */
+#natura {
+    background-color: #daa520b0;
+    width: 350px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.815);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.247);
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sectionnatura {
+    padding-left: 5%;
+    padding-top: 5%;
+    margin-bottom: 4%;
+}
+
+main {
+    background-image: url(/imagens/natura-fundo-inicio.jpg);
+    max-width: 1040px;
+    margin: auto;
+    background-size: cover;
+    height: 472px;
+
+}
+
+footer {
+    background-color: #313131;
+    clear: both;
+    height: 80px;
+    max-width: 1040px;
+    margin: auto;
+}
+
+footer p {
+    color: #daa520;
+    margin-top: 0;
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}

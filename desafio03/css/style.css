@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #48c5cE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+#imgfundo {
+    background-image: url(/assets/images/people.jpg);
+    background-size: 1000px 509px;
+    height: 480px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-right: 0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.76);
+    height: 325px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 740px;
+}
+
+#titleform {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#pform {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 0;
+    border: none;  
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+select {
+    border-radius: 0;
+    display: block;
+    border: none;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url(/assets/images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: center;
+}
+
+#botao {
+    color: white;
+    background-color: rgb(18, 204, 218);
+    font-weight: bold;
+
+}
+
+#sobreele {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-top: -95px;
+    height: 340px;
+}
+
+.text {
+    padding-top: 20px;
+}
+
+#text {
+    width: 350px;
+    height: 100px;
+    margin: auto;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+
+#palestrante {
+    width: 160px;
+    float: left;
+    margin-left: 18%;
+    margin-top: 4%;
+}
+
+
+
+/*-----------!MEDIA QUERIES!-----------*/
+@media screen and (max-width: 1000px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 640px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 905px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 540px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    #text {
+        width: 350px;
+        height: 100px;
+        margin: auto;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 500px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    #text {
+        width: 350px;
+        height: 100px;
+        margin: auto;
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 450px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    #text {
+        width: 350px;
+        height: 100px;
+        margin: auto;
+        padding-left: 250px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 692px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 400px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    #text {
+        width: 350px;
+        height: 100px;
+        margin: auto;
+        padding-left: 300px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 350px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    #text {
+        width: 300px;
+        height: 100px;
+        margin: auto;
+        padding-left: 300px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 300px;
+    }
+
+    #titleform {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #pform {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+
+    #text {
+        width: 250px;
+        height: 100px;
+        margin: auto;
+        padding-left: 300px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 250px;
+    }
+
+
+
+    #sobreele {
+        background-color: rgb(37, 37, 37);
+        color: white;
+        margin-top: -95px;
+        width: 100%;
+        height: 600px;
+        padding: 0;
+    }
+
+    #text {
+        width: 300px;
+        height: 700px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+    }
+
+    #palestrante {
+        float: none;
+        width: 170px;
+        margin-left: 30%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 509px) {
+    form {
+        background-color: rgba(255, 255, 255, 0.76);
+        height: 325px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 22%;
+    }
+
+    #sobreele {
+        background-color: rgb(37, 37, 37);
+        color: white;
+        margin-top: -95px;
+        width: 100%;
+        height: 600px;
+        padding: 0;
+    }
+
+
+    #text {
+        width: 300px;
+        height: 700px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+    }
+
+    #palestrante {
+        float: none;
+        width: 170px;
+        margin-left: 30%;
+        margin-top: 4%;
+    }
+}

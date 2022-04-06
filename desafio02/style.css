@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+#box {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#geral {
+    background-image: url(imagens/backgorund.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    margin-right: -100px;
+    margin-left: 25px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+#instaimg {
+    width: 30px;
+}
+
+#insta {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#twttimg {
+    width: 30px;
+}
+
+#twtt {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#ytimg {
+    width: 30px;
+}
+
+#yt {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#lis {
+    width: 200px;
+    margin-left: -17px;
+}
