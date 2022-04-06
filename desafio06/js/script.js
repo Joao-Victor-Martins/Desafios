@@ -1,6 +1,5 @@
 
 
-
 function adicionar(add) {
     let input = document.getElementById("tarefas")
     let res = document.getElementById("list")
@@ -8,6 +7,10 @@ function adicionar(add) {
 
     let task = localStorage.getItem("valores")
 
-    return res.innerHTML = task
+    return add = res.innerHTML = task
 
+}
+
+function reload() {
+    localStorage.getItem()
 }
