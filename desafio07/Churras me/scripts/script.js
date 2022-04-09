@@ -22,21 +22,42 @@ function calculando() {
 
 
 
-    if (adultos.value.length == 0 || criancas.value.length == 0) {
-        alert("[ERRO] Digite um valor")
+    if (adultos.value.length == 0 && criancas.value.length == 0) {
+        alert("[ERRO] Digite um valor nas duas caixas de texto")
+
     } else if (duracao01 >= 6) {
         carne = adultos01 * 650 + criancas01 * 325
-        cerveja = adultos01 * 2000 + criancas01 * 1000
+        cerveja = (adultos01 * 2000 + criancas01 * 1000) / 355
         bebidas = adultos01 * 1500 + criancas01 * 750
 
-        res.innerText = `${carne}  ${cerveja} ${bebidas}`
-    } else if (adultos01 > 0) {
+        res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas}`
+
+    } else if (adultos01 > 0 && criancas01 > 0) {
         carne = adultos01 * 400 + criancas01 * 200
-        cerveja = (adultos01 * 1200 + criancas01 * 600 )/ 355
+        cerveja = (adultos01 * 1200) / 355
         bebidas = adultos01 * 1000 + criancas01 * 500
+
+        if (bebidas >= 1500) {
+            res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas indexOf} pet´s 2l de Bebidas`
+        } else {
+
+            res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas.length}`
+        }
+
+    } else if (adultos01 > 0) {
+        carne = adultos01 * 400
+        cerveja = (adultos01 * 1200) / 355
+        bebidas = adultos01 * 1000
+
+        res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas}`
+
+    } else if (criancas01 > 0) {
+        carne = criancas01 * 200
+        cerveja = (criancas01 * 600) / 355
+        bebidas = criancas01 * 500
 
         res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas}`
     }
 
-
+    
 }
