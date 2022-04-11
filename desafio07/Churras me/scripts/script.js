@@ -35,13 +35,12 @@ function calculando() {
     } else if (adultos01 > 0 && criancas01 > 0) {
         carne = adultos01 * 400 + criancas01 * 200
         cerveja = (adultos01 * 1200) / 355
-        bebidas = adultos01 * 1000 + criancas01 * 500
+        bebidas = (adultos01 * 1000 + criancas01 * 500) / 2000
 
-        if (bebidas >= 1500) {
-            res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas indexOf} pet´s 2l de Bebidas`
+        if (bebidas > 500) {
+            res.innerHTML = `${carne}  ${Math.ceil(cerveja)} ${Math.ceil(bebidas)} pet´s 2l de Bebidas`
         } else {
-
-            res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas.length}`
+            res.innerHTML = `${carne}  ${Math.ceil(cerveja)} ${Math.ceil(bebidas)} pet´s 2l de Bebidas`
         }
 
     } else if (adultos01 > 0) {
@@ -59,5 +58,5 @@ function calculando() {
         res.innerText = `${carne}  ${Math.ceil(cerveja)} ${bebidas}`
     }
 
-    
+
 }
